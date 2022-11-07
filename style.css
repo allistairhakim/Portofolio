@@ -1,0 +1,68 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: radial-gradient(circle at top right, rgba(121, 68, 154, 0.13),       transparent) ,
+    radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent);
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+canvas {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+
+.white {
+  color:white;
+}
+a {
+  
+}
+
+.center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.invisible {
+  display: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.card {
+  flex-direction: row;
+  align-items: center;
+}
+.card-title {
+  font-weight: bold;
+}
+.card img {
+  width: 30%;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: calc(0.25rem - 1px);
+}
+
+@media only screen and (max-width: 768px) {
+  a {
+    display: none;
+  }
+  .card-body {
+    padding: 0.5em 1.2em;
+  }
+  .card-body .card-text {
+    margin: 0;
+  }
+  .card img {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .card img {
+    width: 40%;
+  }
+}
